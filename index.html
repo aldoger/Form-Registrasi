@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="title">
+            <h1>Form Registrasi Unit Kegiatan</h1>
+        </div>
+        <form action="POST">
+            <div class="container-1">
+                <div>
+                    <label for="nama-lengkap">Nama Lengkap</label>
+                    <input type="text" placeholder="Masukan nama lengkap" name="namalengkap" required>
+                </div>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Masukan username" name="username" required>
+                </div>
+            </div>
+
+            <div class="container-1">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Masukan email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Masukan password" name="password" required>
+                </div>
+            </div>
+
+            <div class="phone">
+                <label for="nomortelepon">Nomor Telepon</label> <br />
+                <input style="width: 100px;" type="text" name="country code" placeholder="Country Code" value="+91" class="country-code" required/>   
+                <input type="text" name="phone" placeholder="Phone No." class="phone-number" required>   
+            </div>
+            
+
+            <div>
+                <label for="address">Address</label> <br>
+                <textarea cols="80" rows="5" placeholder="Current Address" required></textarea>  
+            </div>
+
+            <div>
+                <label>Gender:</label>  <br>  
+                <input type="radio" id="gender" name="gender" value="male"/> Male    
+                <br>  
+                <input type="radio" id="gender" name="gender" value="female"/> Female <br/>  
+            </div>
+
+            <div>
+                <label for="bidang">Course</label>
+                <select name="bidang">
+                    <option value="Course">Course</option>
+                    <option value="Bootcamp">Bootcamp</option>
+                    <option value="Seminar">Seminar</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+</body>
+</html>
